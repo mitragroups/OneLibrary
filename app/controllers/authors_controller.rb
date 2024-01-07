@@ -7,4 +7,9 @@ class AuthorsController < ApplicationController
     @male = Author.male
     render 'authors/male'
   end
+
+  def termuda
+    @muda = Author.youngest
+    render 'authors/termuda'
+  end
 end
