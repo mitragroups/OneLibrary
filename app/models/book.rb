@@ -8,4 +8,8 @@ class Book < ApplicationRecord
   def self.cheapest
     where('price < 300000')
   end
+
+  def self.thick
+    order(page: :desc).pluck(:id, :title, :price, :page)
+  end
 end
