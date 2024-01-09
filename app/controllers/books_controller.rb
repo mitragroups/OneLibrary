@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
   def index
     @books = Book.all
-    render plain: @books.pluck(:title, :price, :page)
+    #render plain: @books.pluck(:title, :price, :page)
   end
 
   def show
