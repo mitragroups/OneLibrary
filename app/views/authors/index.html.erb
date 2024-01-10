@@ -1,13 +1,16 @@
-<h1>Authors#index</h1>
-<p>Find me in app/views/authors/index.html.erb</p>
-
-<% @authors.each do |a| %>
-    <%= a.name %>
-    <br>
-    <%= a.gender %>
-    <br>
-    <%= a.age %>
-    <br>
-    <br>
-<% end %>
-
+<table>
+    <tr>
+        <td>Nama </td>
+        <td>Umur </td>
+        <td>Jenis Kelamin </td>
+        <td>Alamat </td>
+    <tr>
+    <% @authors.each do |a| %>
+    <tr>
+        <td><%= a.name %></td>
+        <td><%= a.age %></td>
+        <td><%= a.gender %></td>
+        <td><%= a.address %></td>
+    <tr>
+    <% end %>
+<table>
