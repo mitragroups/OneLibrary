@@ -5,6 +5,7 @@
         <td>Price</td>
         <td>Page</td>
         <td>Description</td>
+        <td>Action</td>
     </tr>
     <% @books.each do |b| %>
     <tr>
@@ -13,6 +14,7 @@
         <td><%= b.price %></td>
         <td><%= b.page %></td>
         <td><%= b.description %></td>
+        <td><%= link_to  "Detail", book_path(b) %></td>
     </tr>
     <% end %>
 </table>
