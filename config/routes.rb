@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'authors/index'
   get 'authors/author_male'
   get 'authors/termuda'
+  resources :authors
 
 
   get 'books/index'
