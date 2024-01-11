@@ -4,6 +4,7 @@
         <td>Umur </td>
         <td>Jenis Kelamin </td>
         <td>Alamat </td>
+        <td>Action </td>
     <tr>
     <% @authors.each do |a| %>
     <tr>
@@ -11,6 +12,7 @@
         <td><%= a.age %></td>
         <td><%= a.gender %></td>
         <td><%= a.address %></td>
+        <td><%= link_to 'Show', author_path(a) %>
     <tr>
     <% end %>
 <table>
